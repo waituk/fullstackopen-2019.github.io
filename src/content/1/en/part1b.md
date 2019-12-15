@@ -465,7 +465,7 @@ const arto = {
   },
 }
 
-setTimeout(arto.greet, 1000)  // highlight-line
+setTimeout(arto.greet(), 1000)  // highlight-line
 ```
 
 The value of _this_ in Javascript is defined based on how the method is being called. When setTimeout is using the method, it is the Javascript engine that calls the method and _this_ refers to the Timeout object.
